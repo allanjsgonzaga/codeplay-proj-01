@@ -13,6 +13,8 @@ app.get('/hello', (req, res) => {
     res.send("Você está visualizando a primeira rota do server");
 });
 
-server.listen(3000, ()=>{
-    console.log('SERVER RODANDO NA PORTA ${3000}');
-})
+const PORT = 3333;
+
+server.listen(PORT, ()=>{
+    console.log('SERVER RODANDO NA PORTA ${PORT}');
+});
